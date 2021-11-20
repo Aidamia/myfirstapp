@@ -1,0 +1,14 @@
+import streamlit as st
+import math
+import numpy as np
+import pandas as pd
+import datetime
+import time
+import yfinance as yf
+
+st.title('Simple Market Indices App')
+st.text('In this project, I like to display a simple analysis of market indices using this application.')
+
+st.sidebar.header('Welcome to My First App')
+name = st.sidebar.text_input('Your Name')
+st.sidebar.write(' :) ', name)
