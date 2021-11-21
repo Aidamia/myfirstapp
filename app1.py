@@ -20,9 +20,9 @@ option = st.sidebar.selectbox(
 
 if option == 'Nikkei 225':
 
-Nikkeidata = pd.read_csv("https://github.com/Aidamia/myfirstapp/blob/main/Nikkei%20225.csv")
+Nikkeidata = pd.read_csv("https://raw.githubusercontent.com/Aidamia/myfirstapp.py/main/Nikkei%20225.csv")
 st.subheader('Nikkei 225')
-NikkeiHis = Nikkeidata.history(period='1d', start='2010-1-01', end='2021-11-20')
+NikkeiHis = Nikkeidata.history(period='1d', start='2010/1/01', end='2021/11/20')
 
 Nikkeidataframe = pd.DataFrame(Nikkeidata['Location'].value_counts()).head(50)
 
