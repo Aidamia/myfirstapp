@@ -51,7 +51,7 @@ dowjonesdataframe = pd.DataFrame(dowjonesdata['Location'].value_counts()).head(5
 elif option == 'Nashdaq 100':
 st.subheader("Nashdaq 100")
 
-nashdaq100data = pd.read_csv(url = 'https://raw.githubusercontent.com/Aidamia/myfirstapp.py/main/Dow%20Jones.csv')
+nashdaq100data = pd.read_csv(url = 'https://raw.githubusercontent.com/Aidamia/myfirstapp.py/main/Nasdaq%20100.csv')
 nashdaq100His = nashdaq100data.history(period='1d', start='2010/1/01', end='2021/11/20')
 
 nashdaq100dataframe = pd.DataFrame(nashdaq100data['Location'].value_counts()).head(50)
@@ -65,7 +65,7 @@ nashdaq100dataframe = pd.DataFrame(nashdaq100data['Location'].value_counts()).he
 elif option == 'S&P500':
 st.subheader("S&P 500")
 
-sp500data = pd.read_csv(url = 'https://raw.githubusercontent.com/Aidamia/myfirstapp.py/main/Dow%20Jones.csv')
+sp500data = pd.read_csv(url = 'https://raw.githubusercontent.com/Aidamia/myfirstapp.py/main/S%26P%20500.csv')
 sp500His = sp500data.history(period='1d', start='2010/1/01', end='2021/11/20')
 
 sp500dataframe = pd.DataFrame(sp500data['Location'].value_counts()).head(50)
